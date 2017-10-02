@@ -16,6 +16,12 @@ end
 
 template '/var/www/html/index.html' do
   source 'apache.erb'
+  variables(
+    :name => 'apache',
+    :ip_address => "#{ip_address}",
+    :memory => "#{memory}",
+    :hostname => "#{hostname}"
+  )
   action :create
 end
 

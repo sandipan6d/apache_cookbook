@@ -1,4 +1,5 @@
 <h1><font color='green'>Machine Inventory:</font></h1>
-<h2>HOST: <%= node['hostname']  %></h2></br>
-<h2>Private IP: <%= node['ipaddress'] %></h2></br>
-<h2>MEMORY: <%= node['memory']['total'] %></h2>
+<h2>HOST: <%= @hostname  %></h2></br>
+<h2>Private IP: <%= @ip_address %></h2></br>
+<h2>MEMORY: <%= @memory %></h2>
+<h3>Name: <%= @name %></h3>
